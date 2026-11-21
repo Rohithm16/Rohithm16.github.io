@@ -173,7 +173,8 @@ body {
 
 /* Skills */
 
-.skills h2 {
+.skills h2,
+.projects h2 {
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
@@ -204,6 +205,72 @@ body {
 
 .skill-items {
   flex: 1;
+}
+
+/* Projects */
+
+.projects {
+  margin-top: 48px;
+}
+
+.project {
+  border: 1px solid var(--color-line);
+  border-radius: 10px;
+  padding: 20px 22px;
+  margin-bottom: 16px;
+  transition: border-color 0.2s ease;
+}
+
+.project:last-child {
+  margin-bottom: 0;
+}
+
+.project:hover {
+  border-color: var(--color-muted);
+}
+
+.project-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.project-title {
+  font-size: 19px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.project-link {
+  font-size: 14px;
+  color: var(--color-muted);
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-line);
+  flex-shrink: 0;
+}
+
+.project-link:hover {
+  color: var(--color-text);
+  border-bottom-color: var(--color-text);
+}
+
+.project-sub {
+  margin: 2px 0 12px;
+  font-size: 14px;
+  font-style: italic;
+  color: var(--color-muted);
+}
+
+.project-desc {
+  margin: 0 0 12px;
+  font-size: 16px;
+}
+
+.project-stack {
+  margin: 0;
+  font-size: 14px;
+  color: var(--color-muted);
 }
 
 /* Responsive */
@@ -244,5 +311,9 @@ body {
 
   .skill-label {
     flex: none;
+  }
+
+  .project {
+    padding: 18px 16px;
   }
 }

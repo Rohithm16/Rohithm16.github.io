@@ -85,6 +85,49 @@
       </div>
     </section>
 
+    <section class="projects">
+      <h2>Projects</h2>
+
+      <article class="project">
+        <div class="project-head">
+          <h3 class="project-title">Tag and Trail</h3>
+          <a class="project-link" href="https://github.com/Rohithm16/tag-and-trail" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <p class="project-sub">Tag-based link and document security</p>
+        <p class="project-desc">
+          Detects malicious URLs with a LightGBM model (88% accuracy) and malware in PDFs with a Random Forest classifier (98%).
+          A spaCy and Sentence-BERT pipeline generates tags, using MMR to cut semantic redundancy by 35%.
+        </p>
+        <p class="project-stack">LightGBM, Random Forest, spaCy, Sentence Transformers, React, FastAPI, PostgreSQL</p>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3 class="project-title">Recall Loop</h3>
+          <a class="project-link" href="https://github.com/Rohithm16/recall-loop" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <p class="project-sub">Notes-based quiz generation</p>
+        <p class="project-desc">
+          A RAG pipeline that retrieves context from multiple study notes and generates multiple-choice questions.
+          LangGraph orchestrates quiz generation and answer evaluation, with source-grounded explanations and topic-level analysis.
+        </p>
+        <p class="project-stack">RAG, LangGraph, LlamaIndex, Embeddings, Gemini API</p>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3 class="project-title">Feed Indexer</h3>
+          <a class="project-link" href="https://github.com/Rohithm16/feed-indexer" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <p class="project-sub">News synthesis and ranking</p>
+        <p class="project-desc">
+          Ingests 20+ RSS feeds, clusters duplicate stories with embeddings, lexical similarity and entity matching,
+          and ranks them by source quality, freshness and event impact. Gemini writes the headlines, summaries and explanations.
+        </p>
+        <p class="project-stack">Sentence Transformers, Gemini API, React, FastAPI, PostgreSQL</p>
+      </article>
+    </section>
+
   </main>
 
   <script>
